@@ -1,28 +1,26 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\cthomas\\source\\repos\\Oblong-Api\\Oblong-Api\\Oblong-Api.csproj": {}
+    "C:\\Users\\camer\\source\\repos\\Oblong-Api\\Oblong-Api\\Oblong-Api.csproj": {}
   },
   "projects": {
-    "C:\\Users\\cthomas\\source\\repos\\Oblong-Api\\Oblong-Api\\Oblong-Api.csproj": {
+    "C:\\Users\\camer\\source\\repos\\Oblong-Api\\Oblong-Api\\Oblong-Api.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\cthomas\\source\\repos\\Oblong-Api\\Oblong-Api\\Oblong-Api.csproj",
+        "projectUniqueName": "C:\\Users\\camer\\source\\repos\\Oblong-Api\\Oblong-Api\\Oblong-Api.csproj",
         "projectName": "Oblong-Api",
-        "projectPath": "C:\\Users\\cthomas\\source\\repos\\Oblong-Api\\Oblong-Api\\Oblong-Api.csproj",
-        "packagesPath": "C:\\Users\\cthomas\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\cthomas\\source\\repos\\Oblong-Api\\Oblong-Api\\obj\\",
+        "projectPath": "C:\\Users\\camer\\source\\repos\\Oblong-Api\\Oblong-Api\\Oblong-Api.csproj",
+        "packagesPath": "C:\\Users\\camer\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\camer\\source\\repos\\Oblong-Api\\Oblong-Api\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
-          "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\",
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\cthomas\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\camer\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net6.0"
@@ -48,6 +46,12 @@
           "targetAlias": "net6.0",
           "dependencies": {
             "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[6.0.4, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
               "target": "Package",
               "version": "[6.0.4, )"
             },

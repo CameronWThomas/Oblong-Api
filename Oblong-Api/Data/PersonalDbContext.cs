@@ -14,7 +14,7 @@ namespace Oblong_Api.Data
         protected override void OnConfiguring(DbContextOptionsBuilder options)
         {
             // connect to mysql with connection string from app settings
-            var connectionString = _configuration.GetConnectionString("WebApiDatabase");
+            var connectionString = _configuration.GetConnectionString("PersonalDbContext");
             options.UseMySql(connectionString, ServerVersion.AutoDetect(connectionString));
         }
 

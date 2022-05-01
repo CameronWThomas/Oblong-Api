@@ -8,7 +8,8 @@ namespace Oblong_Api.Models
         public int Id { get; set; }
         public string? SiteName { get; set; }
         public string? IP { get; set; }
-        public DateTime TimeEntered { get; set; }
-        public DateTime TimeExited { get; set; }
+        public string? Token { get; set; }
+        public DateTime? TimeEntered { get; set; }
+        public DateTime? TimeExited { get; set; }
     }
 }
