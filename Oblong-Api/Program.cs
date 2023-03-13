@@ -42,9 +42,19 @@ builder.Services.AddCors(options =>
     options.AddPolicy(name: ProdCors,
                       policy =>
                       {
+                          /*
                           policy.WithOrigins("http://oblonggato.com",
-                                              "https://oblonggato.com");
+                                                "http://oblonggato.com/",
+                                                "https://oblonggato.com/",
+                                                "https://oblonggato.com", 
+                                                "http://www.oblonggato.com",
+                                                "http://www.oblonggato.com/",
+                                                "https://www.oblonggato.com",
+                                                "https://www.oblonggato.com/"
+                                        );
 
+                          */
+                          policy.AllowAnyOrigin();
                           policy.AllowAnyHeader();
                           policy.AllowAnyMethod();
                       });
@@ -67,9 +77,7 @@ else
     app.UseCors(ProdCors);
 }
 
-app.UseHttpsRedirection();
-
-
+//app.UseHttpsRedirection();
 
 app.UseAuthorization();
 
